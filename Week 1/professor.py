@@ -1,6 +1,5 @@
 import random
 
-
 def main():
     level = get_level()
     score = 0
@@ -32,7 +31,6 @@ def main():
 
     print(f"Score: {score}")
 
-
 def get_level():
     while True:
         try:
@@ -41,7 +39,6 @@ def get_level():
                 return level
         except ValueError:
             pass
-
 
 def generate_integer(level):
     if level not in (1, 2, 3):
@@ -53,7 +50,6 @@ def generate_integer(level):
         return random.randint(10, 99)
     else:
         return random.randint(100, 999)
-
 
 if __name__ == "__main__":
     main()
