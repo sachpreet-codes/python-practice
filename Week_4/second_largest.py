@@ -11,6 +11,9 @@ for num in numbers:
     if num > largest:
         second_largest = largest
         largest = num
+    elif num < largest:
+        if second_largest is None or num > second_largest:
+            second_largest = num
 
 print(f"The decond largest number is {second_largest}")
 
